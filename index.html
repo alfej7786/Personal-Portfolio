@@ -1,12 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles/style.css">
+  <script src="script/index.js"></script>
+  <!-- ----- Citations ----- -->
+  <!-- https://fontawesome.com/account -->
+  <script src="https://kit.fontawesome.com/d9dc7e92ad.js" crossorigin="anonymous"></script>
+
   <title>My Portfolio</title>
 </head>
+
 <body>
   <!-- Header -->
   <div id="header">
@@ -16,8 +23,9 @@
         <ul>
           <li><a href="#">HOME</a></li>
           <li><a href="#about">ABOUT</a></li>
-          <li><a href="#">PROJECTS</a></li>
-          <li><a href="#">CONTACT</a></li>
+          <li><a href="#services">SERVICES</a></li>
+          <li><a href="#projects">PROJECTS</a></li>
+          <li><a href="#contact">CONTACT</a></li>
         </ul>
       </nav>
       <div class="header-text">
@@ -37,38 +45,78 @@
         </div>
         <div class="about-col-2">
           <h1 class="sub-title">About Me</h1>
-          <p>I'm a dedicated programmer with a love for Web Design and Web Development. I've always been a fantastic problem-solver and a graduate Computer Programmer. I'm now looking for a position in the software business where I can expand my abilities and learn new technologies, enhance my career growth, and contribute with a high level of devotion to the operations of the company.</p>
+          <p>I'm a dedicated programmer with a love for Web Design and Web Development. I've always been a fantastic
+            problem-solver and a graduate Computer Programmer. I'm now looking for a position in the software business
+            where I can expand my abilities and learn new technologies, enhance my career growth, and contribute with a
+            high level of devotion to the operations of the company.</p>
           <div class="tab-titles">
-            <p class="tab-links active-link">SKills</p>
-            <p class="tab-links">Education</p>
-            <p class="tab-links">Experience</p>
+            <p class="tab-links active-link" onclick=" opentab('skills')">SKills</p>
+            <p class="tab-links" onclick=" opentab('education')">Education</p>
+            <p class="tab-links" onclick=" opentab('experience')">Experience</p>
           </div>
           <!-- Skills -->
-          <div class="tab-contents active-tab">
+          <div class="tab-contents active-tab" id="skills">
             <ul>
-              <li><span>Web Developer</span><br>Dedigning web pages</li>
-              <li><span>Web Developer</span><br>Dedigning web pages</li>
-              <li><span>Web Developer</span><br>Dedigning web pages</li>
+              <li><span>Web Developer</span><br>Designing web pages</li>
+              <li><span>Web Developer</span><br>Designing web pages</li>
+              <li><span>Web Developer</span><br>Designing web pages</li>
             </ul>
           </div>
           <!-- Education -->
-          <div class="tab-contents">
+          <div class="tab-contents" id="education">
             <ul>
-              <li><span>Seneca College (Jan 2022 - Apr 2023)</span><br>Ontario College Diploma in Computer Programming, Toronto Canada</li>
+              <li><span>Seneca College (Jan 2022 - Apr 2023)</span><br>Ontario College Diploma in Computer Programming,
+                Toronto Canada</li>
               <li><span>Shakespear College (Jan 2017 - Dec 2019)</span><br>High School Diploma, Lusaka Zambia</li>
               <li><span>Twatotela School (Jan 2010 - Dec 2016)</span><br>Primary School, Lusaka Zambia</li>
             </ul>
           </div>
           <!-- Experience -->
-          <div class="tab-contents">
+          <div class="tab-contents" id="experience">
             <ul>
-              <li><span>Nyalkaran Alloys Internation LTD (Jan 2021 - Dec 2021)</span><br>Web Designer - Created static sites using HTML, Bootstrap, CSS JavaScript, and jQuery that were hosted by GitHub pages.</li>
+              <li><span>Nyalkaran Alloys Internation LTD (Jan 2021 - Dec 2021)</span><br>Web Designer - Created static
+                sites using HTML, Bootstrap, CSS JavaScript, and jQuery that were hosted by GitHub pages.</li>
             </ul>
           </div>
         </div>
       </div>
     </div>
   </div>
-  
+
+  <!-- Service Section -->
+  <div id="services">
+    <div class="container">
+      <h1 class="sub-title">My Services</h1>
+      <div class="services-list">
+        <div>
+          <i class="fa-sharp fa-solid fa-code"></i>
+          <h2>Web Design</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim dicta fugit, architecto aperiam saepe deserunt laboriosam consequuntur illo distinctio veniam placeat incidunt nisi atque dolor vero? Iure adipisci quas impedit?</p>
+          <a href="#">Learn More...</a>
+        </div>
+        <div>
+          <i class="fa-solid fa-database"></i>
+          <h2>Web Design</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim dicta fugit, architecto aperiam saepe deserunt laboriosam consequuntur illo distinctio veniam placeat incidunt nisi atque dolor vero? Iure adipisci quas impedit?</p>
+          <a href="#">Learn More...</a>
+        </div>
+        <div>
+          <i class="fa-brands fa-app-store"></i>
+          <h2>Web Design</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim dicta fugit, architecto aperiam saepe deserunt laboriosam consequuntur illo distinctio veniam placeat incidunt nisi atque dolor vero? Iure adipisci quas impedit?</p>
+          <a href="#">Learn More...</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Projects Section -->
+  <div id="projects">
+    <div class="container">
+      <h1 class="sub-title">My Projects</h1>
+    </div>
+  </div>
+
 </body>
+
 </html>
