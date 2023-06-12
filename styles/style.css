@@ -209,18 +209,18 @@ a:hover{
 
 
 /* --------- Projects Section ---------- */
-#projects{
+#food{
     padding: 50px 0;
 }
 
-.work-list {
+.w3-quarter {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 40px;
     margin-top: 50px;
 }
 
-.work{
+.w3-quarter{
     border-radius: 10px;
     position: relative;
     overflow: hidden;
@@ -232,9 +232,4 @@ a:hover{
     display: block;
 }
 
-/* .layer{
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(rgba(0,0,0,6), #ff004f);
-    border-radius: 10px;
-} */
+.w3-bar-block .w3-bar-item {padding:20px}
