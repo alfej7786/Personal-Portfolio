@@ -209,27 +209,20 @@ a:hover{
 
 
 /* --------- Projects Section ---------- */
-#food{
+#projects{
     padding: 50px 0;
 }
 
-.w3-quarter {
+.w3-row-padding.w3-padding-16.w3-center.work-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 40px;
     margin-top: 50px;
 }
 
-.w3-quarter{
+.work{
     border-radius: 10px;
     position: relative;
     overflow: hidden;
 }
 
-.work img {
-    width: 80%;
-    border-radius: 10px;
-    display: block;
-}
-
-.w3-bar-block .w3-bar-item {padding:20px}
