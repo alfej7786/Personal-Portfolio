@@ -209,20 +209,71 @@ a:hover{
 
 
 /* --------- Projects Section ---------- */
+/* #projects{
+    padding: 50px 0;
+}
+
+.work-list{
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.work-list div {
+        background: #063746;
+        padding: 40px;
+        font-size: 13px;
+        font-weight: 300;
+        border-radius: 10px;
+        transition: background 0.5s, transform 0.5s;
+} */
+
 #projects{
     padding: 50px 0;
 }
 
-.w3-row-padding.w3-padding-16.w3-center.work-list {
+.work-list{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 40px;
     margin-top: 50px;
 }
 
-.work{
+/* grey box */
+.work-list div {
+    background: #353535;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
     border-radius: 10px;
-    position: relative;
-    overflow: hidden;
+    transition: background 0.5s, transform 0.5s;
 }
 
+.work-list div i {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.work-list div h2 {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.work-list div a{
+    text-decoration: none;
+    color: #37c0b4;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.work-list div:hover{
+    background: #48767e;
+    transform: translateY(-10px);
+}
+
+.work-list img{
+    border-radius: 10px;
+    width: fit-content;
+}
