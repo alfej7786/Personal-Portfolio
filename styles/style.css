@@ -368,3 +368,13 @@ a:hover{
     background: #00a6ff;
     color: white;
 }
+
+
+/* --------- Contact Section ---------- */
+.contact-left{
+    flex-basis: 35%;
+}
+
+.contact-right{
+    flex-basis: 60%;
+}
