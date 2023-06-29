@@ -209,7 +209,17 @@
 
 
    </div>
-
+   <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzg_38vhGzGoGE63AVamsAmnhWlSHjCG7r3wTjQiW2qfcozg3v7TCRdJMiv8HAuopkxSA/exec'
+    const form = document.forms['submit-to-google-sheet']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
 </body>
 <script src="script/index.js"></script>
 
