@@ -548,4 +548,8 @@ nav .fa-solid {
         flex-basis: 100%;
     }
 
+    .layer {
+        font-size: 6px;
+    }
+
 }
